@@ -1,0 +1,19 @@
+package com.basic;
+
+public class Student1 {
+	public void printStudent(Student student){
+		System.out.println("Print Student"+student);
+	}
+public static void main(String[] args) {
+	Student student=new Student();
+	student.setFirstName("Agila");
+	student.setLastName("Maha");
+	student.setGender("Female");
+	student.setBranch("EEE");
+	student.setDept("BE");
+	student.setId(7316049);
+	Student1 printstudent=new Student1();
+	printstudent.printStudent(student);
+
+}
+}
