@@ -1,0 +1,71 @@
+package com.basic;
+
+public class Shape {
+public static float area,lenght;
+public void display(){
+	System.out.println("The area of the shape");
+}
+}
+
+
+
+
+
+
+
+
+
+package com.basic;
+
+public class TwoDimensionalShape extends Shape {
+	float width,area;
+	public void square(int length)
+	{
+		area=length*length;
+		System.out.println(" square:"+area);
+	}
+	public void rectangle(int length,int width)
+	{
+		area=length*width;
+		System.out.println(" rectangle:"+area);
+	}
+	public static void main(String[] args) {
+		TwoDimensionalShape twoshapes=new TwoDimensionalShape();
+		twoshapes.display();
+		twoshapes.square(10);
+		twoshapes.rectangle(10, 6);
+		
+	}
+		}
+
+
+
+
+
+
+
+
+
+package com.basic;
+
+public class ThreeDimensionalShape extends Shape{
+	float radius;
+	double area;
+	public void sphere(int radius)
+	{
+		area=4*3.14*radius*radius;
+		System.out.println(" sphere:"+area);
+	}
+	public void rectangle(int length)
+	{
+		area=6*length*length;
+		System.out.println(" cube:"+area);
+	}
+	public static void main(String[] args) {
+		ThreeDimensionalShape threeshapes=new ThreeDimensionalShape();
+		threeshapes.display();
+		threeshapes.sphere(7);
+		threeshapes.rectangle(8);
+		
+	}
+}
