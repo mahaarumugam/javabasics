@@ -10,30 +10,30 @@ import java.util.Scanner;
 		int count2=0;
 		int count3=0;
 		int count4=0;
-		int	count5=0;
+		int count5=0;
 		int count6=0;
 		int count7=0;
 		int count8=0;
 		int count9=0;
 	
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the no of Employes");
-		int n=scan.nextInt();
-		int employes[]=new int[n];
-		System.out.println("Enter the Salesvalue");
-		for(int  j=0;j<n;j++)
-		{
-			employes[j]=scan.nextInt();
+       Scanner scan = new Scanner(System.in);
+       System.out.println("Enter the no of Employes");
+       int n=scan.nextInt();
+       int employes[]=new int[n];
+       System.out.println("Enter the Salesvalue");
+	for(int  j=0;j<n;j++)
+	  {
+		employes[j]=scan.nextInt();
+	  }
+	for(int i=0;i<n;i++)
+	  {
+		employes[i]=200+((9*employes[i])/100);
+	if(employes[i]>200 && employes[i]<300)
+	 {
+	     count1++;
 		}
-		for(int i=0;i<n;i++)
-		{
-			employes[i]=200+((9*employes[i])/100);
-			if(employes[i]>200 && employes[i]<300)
-			{
-				count1++;
-			}
-		if(employes[i]>300 && employes[i]<400)
-		{
+	if(employes[i]>300 && employes[i]<400)
+	{
 			count2++;
 		}
 	if(employes[i]>400 && employes[i]<500)
