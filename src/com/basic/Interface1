@@ -1,0 +1,67 @@
+package com.basic;
+
+public class Car{	
+	public static void main(String[] args) {
+	}
+	
+private String model;
+int i = 10;
+private double speed=20;
+public Car(){
+	System.out.println("empty cons called");
+}
+public Car(int speed){
+	this();
+	this.speed=speed;
+	System.out.println("one arg cons called");
+}
+public Car(int speed ,String model){
+	this(speed);
+	this.speed=speed;
+	this.model=model;
+	System.out.println("two arg cons called");
+}
+public String getmodel(){
+	return model;
+}
+}
+
+
+
+
+
+
+
+
+
+package com.basic;
+
+public class Taxi extends Car {
+	int i=100;
+	//constructer chaining
+	public Taxi(){
+		//super();
+		System.out.println("Taxi cons empty");
+	}
+	public Taxi(int i){
+		super(i);
+		//this();
+		System.out.println("Taxi cons one arg");
+	
+	}
+	public static void main(String[] args) {
+		//Taxi taxi=new Taxi(10);
+		//taxi.brake();
+		//Object substitution
+		Car car=new Taxi();
+	
+		System.out.println(car.i);
+		System.out.println(car instanceof Taxi );
+	}
+	}
+
+
+
+
+
+
