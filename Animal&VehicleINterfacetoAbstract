@@ -1,0 +1,95 @@
+package com.basics;
+
+public interface Travel {
+public int getSpeed();
+}
+
+
+
+
+package com.basics;
+
+	public abstract class Animal implements Travel {
+
+	}
+	class Cat extends Vehicle{
+
+		@Override
+		public int getSpeed() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	}
+	class Dog extends Vehicle{
+
+		@Override
+		public int getSpeed() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	}
+	class tiger extends Vehicle{
+
+		@Override
+		public int getSpeed() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	}
+
+
+
+
+
+package com.basics;
+
+public abstract class Vehicle implements Travel {
+
+}
+class Cycle extends Vehicle{
+
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+class Bus extends Vehicle{
+
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+class Truck extends Vehicle{
+
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+
+
+
+
+
+
+
+package com.basics;
+
+	public class Test {
+		public static void main(String[] args) {
+			Travel travelOne=new Cycle();
+			Travel travelTwo=new Dog();
+			System.out.println(travelTwo instanceof Dog);
+		}
+
+		}
+
+	
+
+
+
+
