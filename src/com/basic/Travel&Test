@@ -1,0 +1,29 @@
+package com.java.interfaceexample;
+
+public interface Travel {
+int count=10;
+public int getSpeed();
+}
+
+
+
+
+
+
+
+package com.java.interfaceexample;
+import static java.lang.Math.PI;
+import static java.lang.Math.abs;
+public class Test {
+	public static void main(String[] args) {
+		
+		Test travelOne=new Test();
+		Test travelTwo=new Test();
+		System.out.println(travelOne instanceof Test);
+		Test travelThree=new Test();
+		double d=PI;
+		abs(12);
+		
+	}
+
+}
